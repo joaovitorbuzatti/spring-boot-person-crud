@@ -1,7 +1,8 @@
-package com.github.joaovitorbuzatti.data.DTO;
+package com.github.joaovitorbuzatti.data.DTO.v2;
 
+import java.util.Date;
 
-public class PersonDTO {
+public class PersonDTOv2 {
 
     private static final long serialVersionUID = 1L;
 
@@ -15,7 +16,9 @@ public class PersonDTO {
 
     private String gender;
 
-    public PersonDTO(){}
+    private Date birthDate;
+
+    public PersonDTOv2(){}
 
     public static long getSerialversionuid() {
         return serialVersionUID;
@@ -61,6 +64,14 @@ public class PersonDTO {
         this.gender = gender;
     }
 
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -81,7 +92,7 @@ public class PersonDTO {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        PersonDTO other = (PersonDTO) obj;
+        PersonDTOv2 other = (PersonDTOv2) obj;
         if (id != other.id)
             return false;
         if (firstName == null) {
@@ -106,7 +117,4 @@ public class PersonDTO {
             return false;
         return true;
     }
-
-   
-
 }

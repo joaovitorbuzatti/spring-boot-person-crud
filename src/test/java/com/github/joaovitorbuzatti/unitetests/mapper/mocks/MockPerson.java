@@ -3,7 +3,7 @@ package com.github.joaovitorbuzatti.unitetests.mapper.mocks;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.github.joaovitorbuzatti.data.DTO.PersonDTO;
+import com.github.joaovitorbuzatti.data.DTO.v1.PersonDTO;
 import com.github.joaovitorbuzatti.model.Person;
 
 

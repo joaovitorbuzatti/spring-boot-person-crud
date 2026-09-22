@@ -10,7 +10,7 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.github.joaovitorbuzatti.data.DTO.PersonDTO;
+import com.github.joaovitorbuzatti.data.DTO.v1.PersonDTO;
 import com.github.joaovitorbuzatti.model.Person;
 import com.github.joaovitorbuzatti.unitetests.mapper.mocks.MockPerson;
 
