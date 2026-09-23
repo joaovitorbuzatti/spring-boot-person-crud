@@ -14,14 +14,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.github.joaovitorbuzatti.data.DTO.v1.PersonDTO;
-import com.github.joaovitorbuzatti.data.DTO.v2.PersonDTOv2;
 import com.github.joaovitorbuzatti.service.PersonService;
 
 
 
-@RequestMapping("/person")
+@RequestMapping("/api/person/v1")
 @RestController
 public class PersonControllers {
 
@@ -36,11 +34,6 @@ public class PersonControllers {
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public PersonDTO create(@RequestBody PersonDTO person){
         return service.create(person);
-    }
-
-    @PostMapping(value = "/v2", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public PersonDTOv2 create(@RequestBody PersonDTOv2 person){
-        return service.createV2(person);
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE)

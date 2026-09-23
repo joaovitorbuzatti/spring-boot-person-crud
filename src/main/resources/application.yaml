@@ -9,11 +9,11 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show-sql: false
     open-in-view: false
 
 logging:
   level:
-    #root: WARN 
+    #root: ERROR 
     com.github.joaovitorbuzatti: DEBUG  
